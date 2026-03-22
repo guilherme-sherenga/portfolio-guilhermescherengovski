@@ -1,5 +1,6 @@
 /* ================= MAIN ================= */
 
+/* Aqui, define a fonte, cor de fundo e texto do site*/
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -7,56 +8,66 @@ body {
     color: white;
 }
 
+/* Aqui, a formatação e centralização da página são definidas */
 main {
     max-width: 900px;
     margin: auto;
 }
 
+/* Definimos aqui o espaçamento geral entre seções */
 section {
     margin: 40px;
 }
 
 /* ================= HEADER ================= */
 
+/* Aqui estilizamos a barra superior */
 header {
     background: #1a1a1a;
     padding: 20px;
     border-bottom: 1px solid #2c2c2c;
 }
 
+/* Links do menu */
 nav a {
     color: white;
     margin-right: 15px;
     text-decoration: none;
 }
 
+/* Pequena animação ao passar o mouse por cima do menu */
 nav a:hover {
     color: #00bcd4;
 }
 
 /* ================ TÍTULOS ================= */
 
+/* Título principal */
 h1 {
     font-size: 32px;
     margin-bottom: 10px;
 }
 
+/* Subtítulos */
 h2 {
     margin-top: 40px;
     margin-bottom: 15px;
 }
 
+/* Títulos menores */
 h3 {
     margin-bottom: 10px;
 }
 
 /* ================ SOBRE MIM ================ */
 
+/* Aqui, estilizamos o container da página "Sobre mim" */
 .sobre-container {
     max-width: 900px;
     margin: auto;
 }
 
+/* A caixa na qual os textos estão inseridos */
 .sobre-box {
     background: #1e1e1e;
     padding: 25px;
@@ -64,6 +75,7 @@ h3 {
     border: 1px solid #2c2c2c;
 }
 
+/* Parágrafos */
 .sobre-texto {
     line-height: 1.7;
     margin-bottom: 15px;
@@ -72,11 +84,13 @@ h3 {
 
 /* ================= FORMAÇÃO ================= */
 
+/* Estilizamos aqui o container da página "Formação" */
 .formacao-container {
     max-width: 900px;
     margin: auto;
 }
 
+/* Mesmo esquema, caixa na qual os textos estão inseridos */
 .formacao-box {
     background: #1e1e1e;
     padding: 25px;
@@ -85,20 +99,24 @@ h3 {
     margin-top: 20px;
 }
 
+/* Margem de cada item da formação */
 .formacao-item {
     margin-bottom: 20px;
 }
 
+/* Título */
 .formacao-item h3 {
     margin-bottom: 5px;
 }
 
+/* Subtítulo */
 .formacao-item p {
     color: #bbb;
 }
 
 /* ================= PORTFÓLIO ================= */
 
+/* Card de cada projeto */
 .projeto {
     background: #1e1e1e;
     padding: 20px;
@@ -108,11 +126,13 @@ h3 {
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
+/* Pequeno efeito ao passar o mouse por cima do card */
 .projeto:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 20px rgba(0,0,0,0.5);
 }
 
+/* Botões para acessar os projetos */
 .projeto a {
     display: inline-block;
     background: #00bcd4;
@@ -124,21 +144,25 @@ h3 {
     margin-top: 10px;
 }
 
+/* Efeito ao passar o mouse por cima dos botões */
 .projeto a:hover {
     background: #0097a7;
 }
 
+/* Pequeno espaçamento entre os botões */
 .botoes a {
     margin-right: 10px;
 }
 
 /* ================= CONTATO ================= */
 
+/* Por fim, o container da página "Contato" */
 .contato-container {
     max-width: 900px;
     margin: auto;
 }
 
+/* Novamente, caixa na qual o texto está inserido */
 .contato-box {
     background: #1e1e1e;
     padding: 25px;
@@ -147,12 +171,14 @@ h3 {
     margin-top: 20px;
 }
 
+/* Layout do formulário */
 .form-contato {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
+/* Campos do formulário */
 .form-contato input,
 .form-contato textarea {
     padding: 10px;
@@ -163,12 +189,14 @@ h3 {
     font-size: 14px;
 }
 
+/* Pequeno efeito ao clicar no campo */
 .form-contato input:focus,
 .form-contato textarea:focus {
     outline: none;
     border: 1px solid #00bcd4;
 }
 
+/* Botão enviar */
 .form-contato button {
     background: #00bcd4;
     color: black;
@@ -180,17 +208,20 @@ h3 {
     transition: background 0.2s;
 }
 
+/* Efeito de hover do botão */
 .form-contato button:hover {
     background: #0097a7;
 }
 
 /* ================= ELEMENTOS GERAIS ================= */
 
+/* Texto auxiliar */
 .subtitulo {
     color: #aaa;
     margin-bottom: 20px;
 }
 
+/* Destaque de tecnologias */
 .tech {
     color: #00bcd4;
     font-weight: bold;
@@ -199,12 +230,14 @@ h3 {
 
 /* ================= SKILLS ================= */
 
+/* Aqui, o container das habilidades */
 .skills-container {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
 }
 
+/* Elencação das habilidades */
 .skill {
     background: #00bcd4;
     color: black;
@@ -218,24 +251,28 @@ h3 {
     gap: 5px;
 }
 
+/* Efeito de hover nas habilidades */
 .skill:hover {
     transform: scale(1.05);
 }
 
 /* ================= ANIMAÇÕES ================= */
 
+/* Animação de entrada */
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
     animation: aparecer 0.8s ease forwards;
 }
 
+/* Atrasos entre animações para simular o efeito de sequência */
 .delay-1 { animation-delay: 0.2s; }
 .delay-2 { animation-delay: 0.4s; }
 .delay-3 { animation-delay: 0.6s; }
 .delay-4 { animation-delay: 0.8s; }
 .delay-5 { animation-delay: 1s; }
 
+/* Definição da animação */
 @keyframes aparecer {
     to {
         opacity: 1;
